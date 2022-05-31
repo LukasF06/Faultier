@@ -1,329 +1,168 @@
-* {
+body {
+    font-family:Arial, Helvetica, sans-serif;
+    margin: 0;
+    background-color: #DBDBDB;
+    position: relative;
+}
+
+.top{
+    text-align: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)), url('Faultier.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 550px;
+    width: 100vw;
+    color: white;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.top-nav{
+    display: flex;
+    padding: 0.5rem 2rem;
+}
+
+.navigation{
+    margin-left: auto;
+    display: flex;
+}
+
+.bars{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px;
+    cursor: pointer;
+    display: none;
+}
+
+.navigation li:hover{
+    color: white;
+    background-color: #46462D;
+}
+
+.navigation li{
+    padding: 10px 10px;
+}
+
+.navigation ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+li{
+    margin: 10px 5px;
+    padding: 5px;
+}
+.logo-name {
+    color: white;
+    background-color: rgb(84, 70, 211);
+    display: inline-block;
+    font-size: 32px;
+    font-weight: bold;
+    padding: 8px;
+    margin-top: 16px;
+}
+
+#logo-name {
+    font-size: 32px;
+    font-weight: bold;
+    margin:16px;
+    color: white;
+}
+
+.banner-heading{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    height: 85%;
+}
+
+
+.mobile-nav i{
+    color: white;
+    margin: 10px 25px;
+    cursor: pointer;
+    padding: 10px 0;
+}
+.mobile-nav{
+    position: absolute;
+    right: 0;
+    top: 0;
+    position: fixed;
+    z-index: 6;
+    background-color: #3D3D2E;
+    width: 300px;
+    height: 100%;
+    transform: translateX(100%);
+}
+
+.mobile-nav ul{
+    list-style: none;    
     margin: 0;
     padding: 0;
-    border: 0;
-    outline: 0;
-    font-size: 100%;
-    vertical-align: baseline;
-    background: transparent;
+}
+
+.mobile-nav li{
+    padding: 20px;
+    width: 100%;
+}
+
+.mobile-nav li:hover{
+    background-color: #46462D;
+}
+
+.dark-box{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+
+}
+#image img {
+    width: 20%;
+  height: 460px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+#main {
+    max-width: 800px;
+    margin: auto;
+    padding: 16px;
+}
+
+
+
+
+.Facts-top{
+    text-align: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)), url('Faultier.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: contain;
+    height: 550px;
+    width: 100vw;
+    color: white;
+}
+
+
+
+@media only screen and (max-device-width: 600px){
+   .navigation ul{
+       display: none;
+   }
+   .bars{
+       display: flex;
+   }
+   .top{
+        background-size: cover;
+   }
    
-    }
-
-    .nav {
-        top: 0;
-        display: flex;
-        width: 100%;
-        justify-content: center;
-        background-color: #042940;
-        align-items: center;
-        text-align: center;
-        vertical-align: middle;
-      }
-      
-      .nav ul {
-        list-style-type: none;
-        text-decoration: none;
-        width: 100%;
-        height: 80px;
-        text-align: center;
-        justify-content: center;
-        align-items: center;
-        vertical-align: middle;
-        margin-top: 25px;
-      }
-      
-      .nav ul li {
-        display: inline;
-        text-align: center;
-        justify-content: center;
-        align-items: center;
-        margin-left: 5%;
-        margin-right: 5%;
-      }
-      
-      .nav ul li a {
-        justify-content: center;
-        align-items: center;
-        text-decoration: none;
-        text-align: center;
-        align-content: center;
-        font-size: larger;
-        font-family: 'Oswald', sans-serif;
-        color: #9FC131;
-      }
-      
-      .nav ul li a:hover {
-        cursor: pointer;
-        font-size: 1.2em;
-        transition: all .6s;
-      }
-
-    .background{
-        background-image: url(bg.jpg);
-    }
-    .lheader{
-        display: flex;
-        width: 100%;
-        height: 100px;
-        text-align: center;
-        justify-content: center;
-        align-items: center;
-        font-size: larger;
-        color: #9FC131;
-       
-        font-family: 'Oswald', sans-serif;
-        background-color: #005C53;
-    }
-
-    .lrow1{
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        height: 550px;
-        background-color: #005C53;
-       
-    }
-
-    .lpic-1{
-        width: 100%;
-        height: 300px;
-        border: 3px solid #EEFF00;
-    }
-
-    .nahrung{
-        display: flex;
-        width: 100%;
-        height: 300px;
-        text-align: center;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        color: #9FC131;
-        
-        font-family: 'Halant', serif;;
-    }
-
-    .nahrung h2{
-        font-family: 'Oswald', sans-serif;
-    }
-    
-    .lrow2{
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        height: 550px;
-        background-color: #005C53;
-
-    }
-
- 
-    .lpic-2{
-        width: 100%;
-        height: 300px;
-        border: 3px solid #EEFF00;
-    }
-
-    .alter{
-        display: flex;
-        width: 100%;
-        height: 300px;
-        text-align: center;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        color: #9FC131;
-        background-color: #005C53;
-        font-family: 'Halant', serif;
-    }
-
-    .alter h2{
-        font-family: 'Oswald', sans-serif;
-    }
-
-    .lrow3{
-        display: flex;
-        width: 100%;
-        height: 600px;
-        flex-direction: column;
-        background-color: #005C53;
-
-    }
-
-    .lpic-3{
-        width: 100%;
-        height: 300px;
-        border: 3px solid #EEFF00;
-    }
-
-    .tagesablauf{
-        display: flex;
-        width: 100%;
-        height: 300px;
-        text-align: center;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        color: #9FC131;
-        background-color: #005C53;
-        font-family: 'Halant', serif;
-    }
-
-    .tagesablauf h2{
-        font-family: 'Oswald', sans-serif;
-    }
-
-    .lfooter{
-        
-        color: #9FC131;
-        background-color: #042940;
-        text-align: center;
-        font-size: larger;
-        font-family: 'Halant', serif;
-        font-size: medium;
-    }
-
-    .lfooter h2{
-        font-family: 'Oswald', sans-serif;
-        font-size: large;
-    }
-
-    .flabel{
-        margin-top: 2%;
-        display: flex;
-        color: #9FC131;
-        flex-direction: column;
-        text-align: left;
-        font-family: 'Oswald', sans-serif;
-        font-size: large;
-
-    }
-
-    input,
-textarea {
-   
-        color:#EEFF00;
-        background-color: #005C53;
-        font-family: 'Halant', serif;
-        
-    }
-
-    .button{
-        color: #EEFF00;
-        border: #9FC131 solid 3px;
-        border-radius: 5px;
-        border-width: 6px;
-        background-color: #9FC131;
-        margin-top: 3%;
-        margin-bottom: 3%;
-        
-        
-    }
-    .button:hover{
-        cursor: pointer;
-        font-size: 1.2em;
-        transition: all .6s;
-
-    }
-    
-
-    @media only screen and (min-width: 790px){
-        .lheader{
-            font-size: xx-large;
-            width: 50%;
-            margin-top: 5%;
-            padding-top: 3%;
-            height: 50px;
-        
-        }
-        
-        .background{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-            justify-content: center;
-        }
-        
-        .lpic-1{
-            width: 100%;
-            height: none;
-            border: none;
-            
-        }
-        .lpic-2{
-            width: 350px;
-            height: none;
-            border: none;
-            
-        }
-        .lpic-3{
-            width: 100%;
-            height: none;
-            border: none;
-            
-        }
-        .lrow1{
-            align-items: center;
-            width: 50%;
-            border: 3px solid #EEFF00;
-            margin-top: 5%;
-        }
-        .lrow2{
-            align-items: center;
-            width: 50%;
-            margin-bottom: 5%;
-            margin-top: 5%;
-            border: 3px solid #EEFF00;
-        }
-        .lrow3{
-            align-items: center;
-            width: 50%;
-            border: 3px solid #EEFF00;
-            margin-bottom: 5%;
-        }
-        .alter{
-            width: 100%;
-        }
-        .alter h2{
-            font-size: x-large;
-        }
-
-        .nahrung{
-            width: 100%;
-        }
-        .nahrung h2{
-            font-size: x-large;
-        }
-        .tagesablauf{
-            width: 100%;
-        }
-        .tagesablauf h2{
-            font-size: x-large;
-        }
-
-        .nav ul{
-            height: 50px;
-        }
-        .background{
-            background-repeat: no-repeat;
-            background-size:cover;
-        }
-       
-        .flabel{
-            width: 96%;
-            margin-left: 2%;
-    
-        }
-    
-        input,
-    textarea {
-        width: 96%;
-        
-            
-            
-        }
-      
-    }
-
-   
-
+}
