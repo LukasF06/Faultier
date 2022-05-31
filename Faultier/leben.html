@@ -7,25 +7,47 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet"> 
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Halant&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Hind:wght@300&family=Raleway:wght@200&display=swap" rel="stylesheet">
     <title>Leben</title>
 </head>
 <body>
+    <section class="bgcolor">
+    <header>
+        <a href="Index.html"class="logo">Faultiere</a>
+       <div class="menu"></div>
+       <nav>
+           <ul>
+           <li><a href="Herkunft.html">Herkunft</a></li>
+           <li><a href="Arten.html">Arten</a></li>
+           <li><a href="leben.html" class="active">Leben</a></li>
+           <li><a href="Facts.html">Facts</a></li> 
+           <li><a href="Index.html">Startseite</a></li>
+           </ul>
+       </nav>   
+       <div class="clearfix"></div>     
+</header>
+<script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+     <script type="text/javascript">
+      $(document).ready(function(){
+          $('.menu').click(function(){
+              $('.menu').toggleClass('active')
+              $('nav').toggleClass('active')
+          })      
+      })
+    </script>
+</section>
 
-    <nav class="nav">
-        <ul>
-            <li><a href="herkunft.html">Herkunft</a></li>
-            <li><a href="aussehen.html">Aussehen</a></li>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="fakten.html">Fakten</a></li>
-     </ul> 
+</body>
 
 
-    </nav>
+    
      <div class="background">
-    <div class="lheader">
-        <h1>Das Leben der Faultiere<br><br></h1>
-    </div>
+    
     <section class="lrow1">  
             <img src="lpic-1.jpg" class="lpic-1">
         <div class="nahrung">
