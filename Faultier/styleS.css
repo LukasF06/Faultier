@@ -20,7 +20,7 @@
         border-radius: 4px;
         box-shadow: #000;
         font-family:  'Raleway', sans-serif;
-        margin-left: 10%;
+        
         
         
         
@@ -302,6 +302,16 @@ textarea {
             border: 3px solid #EEFF00;
             margin-top: 5%;
         }
+        .lrow1:hover{
+          font-size: 1.2em;
+          transition: all 1.6s;
+          width: 60%;
+          height: 650px;
+          
+          
+        }
+      
+        
         .lrow2{
             align-items: center;
             width: 50%;
@@ -309,11 +319,25 @@ textarea {
             margin-top: 5%;
             border: 3px solid #EEFF00;
         }
+        .lrow2:hover{
+          font-size: 1.2em;
+          transition: all 1.6s;
+          width: 60%;
+          height: 650px;
+        
+        }
         .lrow3{
             align-items: center;
             width: 50%;
             border: 3px solid #EEFF00;
             margin-bottom: 5%;
+        }
+        .lrow3:hover{
+          font-size: 1.2em;
+          transition: all 1.6s;
+          width: 60%;
+          height: 650px;
+          
         }
         .alter{
             width: 100%;
@@ -353,6 +377,14 @@ textarea {
             
             
         }
+        input:hover,
+    textarea:hover {
+     background-color: #9FC131;
+     transition: all .8s;
+    }
+   
+  
+  }
         @media (max-width:1200px){
             header{
               margin:20px;
@@ -399,6 +431,56 @@ textarea {
               background-color:#005C53;
               
           }
+          @media (min-width: 1200px) {
+            header{
+              max-width: none;
+              align-items: center;
+              text-align: center;
+              justify-content: center;
+            }
+            .logo{
+              margin-left: 20%;
+            }
+            nav{
+              margin-right: 20%;
+            }
+          }
+          @media (min-width:1700px){
+            .lrow1{
+              height: 800px;
+            }
+            .lrow1:hover{
+              height: 850px;
+              font-size: 1.8em;
+            }
+            .lpic-1{
+              width: 100%;
+              height: 500px;
+            }
+            .lrow2{
+              height: 800px;
+            }
+            .lrow2:hover{
+              height: 850px;
+              font-size: 1.8em
+            }
+            .lpic-2{
+              width: 100%;
+              height: 500px;
+            }
+            .lrow3{
+              height: 800px;
+            }
+            .lrow3:hover{
+              height: 850px;
+              font-size: 1.8em
+            }
+            .lpic-3{
+              width: 100%;
+              height: 500px;
+            }
+            
+          }
           
           
           
@@ -410,7 +492,4 @@ textarea {
           
           
       
-    }
-
-   
-
+    
