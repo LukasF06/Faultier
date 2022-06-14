@@ -6,57 +6,57 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
-  <title>Facts</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet"> 
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Halant&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Hind:wght@300&family=Raleway:wght@200&display=swap" rel="stylesheet">
+    <link rel="shortcut icon"
+        href="emoji.png"
+        type="image/svg+xml">
+    <title>Facts</title>
+  
 </head>
 <body>
   
-  <div class="dark-box"></div>
-  <div data-mobile="" class="mobile-nav">
-    <ul>
-      <li>
-        <a href="Herkunft.html">Herkunft</a>
-      </li>
-      <li>
-        <a href="leben.html">Leben</a>
-      </li>
-      <li>
-        <a href="Facts.html">Facts</a>
-      </li>
-      <li>
-        <a href="Arten.html">Arten</a>
-      </li>
-    </ul>
-  </div>
+  <div class="bg">
+  <header>
+    <a href="Index.html"class="logo">Faultiere</a>
+   <div class="menu"></div>
+   <nav>
+       <ul>
+       <li><a href="Herkunft.html">Herkunft</a></li>
+       <li><a href="Arten.html">Arten</a></li>
+       <li><a href="leben.html">Leben</a></li>
+       <li><a href="Facts.html" class="active">Facts</a></li> 
+       <li><a href="Index.html">Startseite</a></li>
+       </ul>
+   </nav>   
+   <div class="clearfix"></div>     
+</header>
+<script
+src="https://code.jquery.com/jquery-3.3.1.js"
+integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+crossorigin="anonymous"></script>
+ <script type="text/javascript">
+  $(document).ready(function(){
+      $('.menu').click(function(){
+          $('.menu').toggleClass('active')
+          $('nav').toggleClass('active')
+      })      
+  })
+</script>
+
   <div class="Facts-top">
-    <div class="top-nav">
-      
-      <div id="logo-name">
-        Faultier
-      </div>
-      <div class="navigation">
-        <ul>
-          <li>
-            <a href="Herkunft.html">Herkunft</a>
-          </li>
-          <li>
-            <a href="leben.html">Leben</a>
-          </li>
-          <li>
-            <a href="Facts.html">Facts</a>
-          </li>
-          <li>
-            <a href="Arten.html">Arten</a>
-          </li>
-        </ul>
-        <div data-bars="" class="bars"></div>
-      </div>
-    </div>
+    
     <div class="banner-heading">
       <div class="heading">
         <h1>Facts über das Faultier</h1>
       </div>
     </div>
   </div>
+</div>
   <div id="main">
     <h2>Die Symbiose mit Algen und Motten </h2>
     
@@ -82,5 +82,25 @@
         Hälfte der Faultiere tödlich, da auf dem Boden ihre einzigen natürlichen Feinde sind.
       </p>
     </div>
+
+    <section class="lfooter">
+      <h2><br>Kontakt</h2>
+      <p><br>Falls Sie ein Anliegen haben, können Sie gerne eine Nachricht mit diesem Formular senden<br><br></p>
+      <form
+action="https://formspree.io/f/meqnnvwb"
+method="POST"
+>
+<label class="flabel">
+  Deine E-mail:
+  <input type="email" name="email">
+</label>
+<label class="flabel">
+  Deine Nachricht:
+  <textarea name="message"></textarea>
+</label>
+<!-- your other form fields go here -->
+<button class="button" type="submit">Send</button>
+</form>
+</section>
 </body>
 </html>
