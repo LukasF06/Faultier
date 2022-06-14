@@ -4,6 +4,29 @@
     margin:0;
 }
 
+#forthandback {
+  animation: forthandback alternate infinite 20s;
+  top:176px;
+  position:absolute;
+  height: 100px;
+  width: 100px;
+  z-index:1;
+}
+
+@keyframes forthandback {
+  from {transform:translateX(15px);}
+  to {transform:translateX(1390px);}
+}
+
+#forthandback2 {
+  animation: forthandback alternate-reverse infinite 20s;
+  top:2170px;
+  position:absolute;
+  height: 100px;
+  width: 100px;
+  z-index:1;
+}
+
 header{
     position: relative;
     max-width: 1200px;
@@ -346,6 +369,29 @@ body {
     }
     nav.active ul li{
       margin:0;
+    }
+
+    @keyframes forthandback {
+      from {transform:translateX(5px);}
+      to {transform:translateX(320px);}
+    }
+
+    #forthandback {
+      animation: forthandback alternate infinite 20s;
+    top:315px;
+    position:absolute;
+    height: 100px;
+    width: 100px;
+    z-index:1;
+    }
+
+    #forthandback2 {
+      animation: forthandback alternate-reverse infinite 20s;
+      top:1887px;
+      position:absolute;
+      height: 100px;
+      width: 100px;
+      z-index:1;
     }
 }
 
