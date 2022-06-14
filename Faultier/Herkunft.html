@@ -12,6 +12,9 @@
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Hind:wght@300&family=Raleway:wght@200&display=swap" rel="stylesheet">
     <script src="js/script.js"></script>
+    <link rel="shortcut icon"
+        href="emoji.png"
+        type="image/svg+xml">
     <title>Herkunft</title>
 </head>
 <body>
@@ -20,34 +23,30 @@
         <div class="menu"></div>
         <nav>
             <ul>
-            <li><a href="Herkunft.html">Herkunft</a></li>
+            <li><a href="Herkunft.html" class="active">Herkunft</a></li>
             <li><a href="Arten.html">Arten</a></li>
             <li><a href="Leben.html">Leben</a></li>
             <li><a href="Facts.html">Facts</a></li> 
-            <li><a href="Index.html" class="active">Startseite</a></li>
+            <li><a href="Index.html">Startseite</a></li>
             </ul>
         </nav>   
         <div class="clearfix"></div>     
-</header>
-<script>
-  src="https://code.jquery.com/jquery-3.3.1.js"
-  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-  crossorigin="anonymous"></script>
-     <script type="text/javascript">
-      $(document).ready(function(){
-          $('.menu').click(function(){
-              $('.menu').toggleClass('active')
-              $('nav').toggleClass('active')
-          })      
-      })
-    </script>
+        </header>
 
-    <div class="container2 hvr-grow">
-    <div class="text-box-title">
-        Herkunft
-    </div>
-</div>
-    <div class="text-box">&nbsp</div>
+        <script>
+            src="https://code.jquery.com/jquery-3.3.1.js"
+            integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+            crossorigin="anonymous"></script>
+               <script type="text/javascript">
+                $(document).ready(function(){
+                    $('.menu').click(function(){
+                        $('.menu').toggleClass('active')
+                        $('nav').toggleClass('active')
+                    })      
+                })
+              </script>
+
+<div class="text-box">&nbsp</div>
     <div class="container2">
     <div class="text-box">
         Man vermutet, dass Faultiere ursprünglich aus Südamerika kommen. Mittel- und Nordamerika wurden in mehreren Ausbreitungswellen erreicht. Man findet sie auch in der Karibik.
@@ -80,11 +79,11 @@
 >
   <label class="flabel">
     Deine E-mail:
-    <input type="email" name="email">
+    <input type="email" name="email" class="hvr-color">
   </label>
   <label class="flabel">
     Deine Nachricht:
-    <textarea name="message"></textarea>
+    <textarea name="message" class="hvr-color"></textarea>
   </label>
   <!-- your other form fields go here -->
   <button class="button" type="submit">Send</button>

@@ -9,13 +9,14 @@ header{
     max-width: 1200px;
     margin: 20px auto;
     padding: 10px;
-    background: wheat;
+    background: rgb(0, 54, 49);
     box-sizing: border-box;
     border-radius: 4px;
     box-shadow: #000;
+    font-family: oswald;
   }
   .logo{
-    color:#000;
+    color:rgb(208, 255, 0);
     height: 50px;
     font-size: 36px;
     line-height:60px;
@@ -46,7 +47,7 @@ header{
     margin: 10px 0;
     padding: 10px 20px;
     text-decoration: none;
-    color:#000000;
+    color:rgb(208, 255, 0);
   }
   nav ul li a.active,
   nav ul li a:hover{
@@ -99,7 +100,7 @@ header{
         align-self: center;
         font-size: 55px;
         font-weight: 600;
-        font-family: Georgia;
+        font-family: Oswald;
         margin: 10px;
     }
     
@@ -108,8 +109,8 @@ header{
         text-align: center;
         align-self: center;
         font-size: 30px;
-        font-weight: 500;
-        font-family: Georgia;
+        font-weight: 10px;
+        font-family: Oswald;
         margin: 25px;
     }
     
@@ -133,7 +134,7 @@ header{
         align-self: center;
         font-size: 30px;
         font-weight: 1000;
-        font-family: Georgia;
+        font-family: Oswald;
     }
 
     .responsive {
@@ -238,9 +239,27 @@ textarea {
       transform: scale(1.1);
     } 
 
+.hvr-color {
+  -webkit-transform: perspective(1px) translateZ(0);
+      transform: perspective(1px) translateZ(0);
+      box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+      -webkit-transition-duration: 0.3s;
+      transition-duration: 0.3s;
+      -webkit-transition-property: transform;
+      transition-property: transform;
+}
+
+.hvr-color:hover,
+.hvr-color:focus,
+.hvr-color:active {
+  background-color: #9FC131;
+  transition: 0,7s;
+}
+
 @media screen and (max-width: 320px) {
 
 body {
+  
     background-color:rgb(0, 54, 49);
     background-image: none;
 }
@@ -265,7 +284,7 @@ body {
     align-self: center;
     font-size: 20px;
     font-weight: 550;
-    font-family: Georgia;
+    font-family: Oswald;
 }
 
 .text-box-title {
@@ -274,7 +293,7 @@ body {
     align-self: center;
     font-size: 17px;
     font-weight: 600;
-    font-family: Georgia;
+    font-family: Oswald;
 }
 
 .text-box {
@@ -283,7 +302,7 @@ body {
     align-self: center;
     font-size: 15px;
     font-weight: 500;
-    font-family: Georgia;
+    font-family: Oswald;
     margin: 0;
 }
 
@@ -332,6 +351,5 @@ body {
     border: 0px;
     background: rgb(0, 54, 49);
 }
-
 }
 
