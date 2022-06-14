@@ -256,7 +256,7 @@ textarea {
   transition: 0,7s;
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 768px) {
 
 body {
   
