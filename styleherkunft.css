@@ -56,44 +56,6 @@ header{
     transition:0.5s
   }
   
-  @media (max-width:768px){
-    .menu{
-      display:block;
-      width:45px;
-      height:45px;
-      margin: 10px;
-      background: transparent;
-      float: right;
-      cursor: pointer;
-      text-align: center;
-      font-size: 30px;
-      color:#000000
-    }
-    .menu:before{
-      content:'\f0c9';
-      font-family: fontAwesome;
-      line-height: 40px;
-    }
-    .menu.active:before{
-      content:'\f00d';
-    }
-    nav{
-      display: none;
-    }
-    nav.active{
-      display: block;
-      width:100%;
-    }
-    nav.active ul{
-      display:block;
-    }
-    nav.active ul li{
-      margin:0;
-    }
-
-    
-  }
-  
     .text-box-title {
         color:rgb(208, 255, 0);
         text-align: center;
@@ -351,5 +313,39 @@ body {
     border: 0px;
     background: rgb(0, 54, 49);
 }
+
+.menu{
+      display:block;
+      width:45px;
+      height:45px;
+      margin: 10px;
+      background: transparent;
+      float: right;
+      cursor: pointer;
+      text-align: center;
+      font-size: 30px;
+      color:#000000
+    }
+    .menu:before{
+      content:'\f0c9';
+      font-family: fontAwesome;
+      line-height: 40px;
+    }
+    .menu.active:before{
+      content:'\f00d';
+    }
+    nav{
+      display: none;
+    }
+    nav.active{
+      display: block;
+      width:100%;
+    }
+    nav.active ul{
+      display:block;
+    }
+    nav.active ul li{
+      margin:0;
+    }
 }
 
